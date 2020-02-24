@@ -29,6 +29,7 @@ public class Shop {
             }
 
             // here, you write the code to add a product to the shopping basket, if the storehouse is not empty
+            // and decreases the storehouse stocks
 
             if (store.stock(product) > 0){
                 store.take(product);
@@ -36,8 +37,7 @@ public class Shop {
                 basket.add(product,store.price(product));
             }
 
-            // and decreases the storehouse stocks
-            // do not touch the rest of the code!
+
 
         }
 
